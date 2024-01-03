@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Pagina Principal</title>
+  <link href="menu_principal.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+  <header class="verde-superior">
+    <img src="imagem/gasolina.jpg" alt="Ícone de gasolina">
+    <h1>PetroBusca</h1>
+  </header>
+
+  <section class="amarelo-meio"></section>
+
+  <section class="verde-inferior">
+    <!-- Adicione os quatro botões aqui -->
+    <button class="botao" onclick="redirecionar('Meu Perfil')">Meu Perfil</button>
+    <button class="botao" onclick="redirecionar('Calcular Preço')">Calcular Preço</button>
+    <button class="botao" onclick="redirecionar('Consultar Preço')">Consultar Preço</button>
+    <button class="botao" onclick="redirecionar('configurações')">configurações Gerais</button>
+  </section>
+
+  <script src="menu_principal.js"></script>
+
+  <script>
+    // Função para redirecionar para as páginas desejadas
+    function redirecionar(pagina) {
+      window.location.href = pagina + '.html'; // Adicionei '.html' ao final do nome da página
+    }
+  </script>
+
+</body>
+
+</html>
